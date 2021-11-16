@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-deployment
+  namespace: sample
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+      - name: web-app-container
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 80
+  selector:
+    matchLabels:
+      app: web-app
