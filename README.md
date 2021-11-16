@@ -10,8 +10,8 @@ $ minikube start --driver=virtualbox
 ```bash
 $ minikube start --vm-driver=hyperkit
 ```
-
-![Alt text](//img/minikube-start.png)
+&nbsp;
+![Alt text](./img/minikube-start.png)
 
 &nbsp;
 
@@ -23,7 +23,8 @@ $ minikube start --vm-driver=hyperkit
     ```bash
     $ minikube addons enable ingress
     ```
-    ![Alt text](//img/minikube-enable-ingress.png) 
+    &nbsp;
+    ![Alt text](./img/minikube-enable-ingress.png) 
     &nbsp;
 
 
@@ -32,9 +33,9 @@ $ minikube start --vm-driver=hyperkit
     ```bash
     $ kubectl get pods -n ingress-nginx
     ```
-    The output is similar to:
-
-    ![Alt text](//img/ingress-nginx.png)
+    
+    The output is similar to:&nbsp;
+    ![Alt text](./img/ingress-nginx.png)
 
 
 
@@ -45,8 +46,8 @@ $ minikube start --vm-driver=hyperkit
     $ kubectl apply -f namespace.yaml
     ```
     
-    The output should be:
-    ![Alt text](//img/namespace-created.png)
+    The output should be:&nbsp;
+    ![Alt text](./img/namespace-created.png)
 
     &nbsp;
 2. **Create a Deployment using the following command:**
@@ -55,8 +56,8 @@ $ minikube start --vm-driver=hyperkit
     $ kubectl apply -f deployment.yaml
     ```
 
-    The output should be:
-    ![Alt text](//img/deployment-created.png)
+    The output should be:&nbsp;
+    ![Alt text](./img/deployment-created.png)
 
     &nbsp;
 3. **Create the Service:**
@@ -66,8 +67,8 @@ $ minikube start --vm-driver=hyperkit
     $ kubectl apply -f service.yaml
     ```
 
-    The output should be:
-    ![Alt text](//img/service-created.png)
+    The output should be:&nbsp;
+    ![Alt text](./img/service-created.png)
 
     &nbsp;
 4. **Verify the Service is created and is available on a node port:**
@@ -77,8 +78,8 @@ $ minikube start --vm-driver=hyperkit
     $ kubectl get service web-service -n sample
     ```
     
-    The output is similar to:
-    ![Alt text](//img/view-service.png)
+    The output is similar to:&nbsp;
+    ![Alt text](./img/view-service.png)
 
     &nbsp;
 5. **Visit the Service via NodePort:**
@@ -87,8 +88,8 @@ $ minikube start --vm-driver=hyperkit
     $ minikube service web-service -n sample --url
     ```
     
-    The output is similar to:
-    ![Alt text](//img/get-url.png)
+    The output is similar to:&nbsp;
+    ![Alt text](./img/get-url.png)
 
     &nbsp;
 ##Create an Ingress
@@ -102,8 +103,8 @@ The following manifest defines an Ingress that sends traffic to your Service via
     $ kubectl apply -f example-ingress.yaml
     ```
 
-    The output should be:
-    ![Alt text](//img/ingress-created.png)
+    The output should be:&nbsp;
+    ![Alt text](./img/ingress-created.png)
 
     &nbsp;
 
@@ -116,7 +117,7 @@ The following manifest defines an Ingress that sends traffic to your Service via
 
     You should see an IPv4 address in the ADDRESS column; for example:
     &nbsp;
-    ![Alt text](//img/get-address-ingress.png)
+    ![Alt text](./img/get-address-ingress.png)
 
     &nbsp;
 3. **Add the following line to the bottom of the /etc/hosts file on your computer (you will need administrator access):**
@@ -137,5 +138,5 @@ The following manifest defines an Ingress that sends traffic to your Service via
     $ curl minikube-example.com
     ```
 
-    You should see:
+    You should see:&nbsp;
     ![Alt text](./img/curl-url.png)
