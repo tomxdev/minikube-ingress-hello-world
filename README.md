@@ -11,7 +11,7 @@ $ minikube start --driver=virtualbox
 $ minikube start --vm-driver=hyperkit
 ```
 
-![Alt text](//img/minikube-start.png "a title")
+![Alt text](//img/minikube-start.png)
 
 &nbsp;
 
@@ -23,7 +23,7 @@ $ minikube start --vm-driver=hyperkit
     ```bash
     $ minikube addons enable ingress
     ```
-    ![Alt text](//img/minikube-enable-ingress.png "a title") 
+    ![Alt text](//img/minikube-enable-ingress.png) 
     &nbsp;
 
 
@@ -34,7 +34,7 @@ $ minikube start --vm-driver=hyperkit
     ```
     The output is similar to:
 
-    ![Alt text](//img/ingress-nginx.png "a title")
+    ![Alt text](//img/ingress-nginx.png)
 
 
 
@@ -46,7 +46,7 @@ $ minikube start --vm-driver=hyperkit
     ```
     
     The output should be:
-    ![Alt text](//img/namespace-created.png "a title")
+    ![Alt text](//img/namespace-created.png)
 
     &nbsp;
 2. **Create a Deployment using the following command:**
@@ -56,7 +56,7 @@ $ minikube start --vm-driver=hyperkit
     ```
 
     The output should be:
-    ![Alt text](//img/deployment-created.png "a title")
+    ![Alt text](//img/deployment-created.png)
 
     &nbsp;
 3. **Create the Service:**
@@ -67,7 +67,7 @@ $ minikube start --vm-driver=hyperkit
     ```
 
     The output should be:
-    ![Alt text](//img/service-created.png "a title")
+    ![Alt text](//img/service-created.png)
 
     &nbsp;
 4. **Verify the Service is created and is available on a node port:**
@@ -78,7 +78,7 @@ $ minikube start --vm-driver=hyperkit
     ```
     
     The output is similar to:
-    ![Alt text](//img/view-service.png "a title")
+    ![Alt text](//img/view-service.png)
 
     &nbsp;
 5. **Visit the Service via NodePort:**
@@ -88,7 +88,7 @@ $ minikube start --vm-driver=hyperkit
     ```
     
     The output is similar to:
-    ![Alt text](//img/get-url.png "a title")
+    ![Alt text](//img/get-url.png)
 
     &nbsp;
 ##Create an Ingress
@@ -103,7 +103,7 @@ The following manifest defines an Ingress that sends traffic to your Service via
     ```
 
     The output should be:
-    ![Alt text](//img/ingress-created.png "a title")
+    ![Alt text](//img/ingress-created.png)
 
     &nbsp;
 
@@ -116,7 +116,7 @@ The following manifest defines an Ingress that sends traffic to your Service via
 
     You should see an IPv4 address in the ADDRESS column; for example:
     &nbsp;
-    ![Alt text](//img/get-address-ingress.png "a title")
+    ![Alt text](//img/get-address-ingress.png)
 
     &nbsp;
 3. **Add the following line to the bottom of the /etc/hosts file on your computer (you will need administrator access):**
@@ -138,4 +138,4 @@ The following manifest defines an Ingress that sends traffic to your Service via
     ```
 
     You should see:
-    ![Alt text](//img/curl-url.png "a title")
+    ![Alt text](./img/curl-url.png)
